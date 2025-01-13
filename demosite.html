@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Olympics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: url('https://w0.peakpx.com/wallpaper/188/474/HD-wallpaper-olympic-sign-sign-of-the-olympic-games-international-olympic-committee-olympic-games-tokyo-2020-olympic-competition-2020-summer-olympics.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover{
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Summer Olympics Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#live-streams">Live Streams</a></li>
+            <li><a href="#medals">Medals</a></li>
+            <li><a href="#venues">Venues</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Schedule Section -->
+        <div class="card" id="schedule">
+            <h2>Olympics Schedule</h2>
+            <p><strong>Day 1:</strong> Opening Ceremony - 10:00 AM</p>
+            <p><strong>Day 2:</strong> 100m Sprint Qualifiers - 11:00 AM</p>
+            <p><strong>Day 3:</strong> Swimming Finals - 4:00 PM</p>
+            <a href="#" class="button">View Full Schedule</a>
+        </div>
+
+        <!-- Live Streams Section -->
+        <div class="card" id="live-streams">
+            <h2>Live Stream</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qUEHSAIR0lU?si=Oyo_OR5-G09B_BpJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Catch the live action of the Summer Olympics!</p>
+        </div>
+
+        <!-- Medals Section -->
+        <div class="card" id="medals">
+            <h2>Medal Tally</h2>
+            <p><strong>Sdma:</strong> 30 Gold, 25 Silver, 20 Bronze</p>
+            <p><strong>Unipolish:</strong> 25 Gold, 20 Silver, 15 Bronze</p>
+            <p><strong>Hardaspur Ground:</strong> 20 Gold, 18 Silver, 12 Bronze</p>
+            <a href="#" class="button">View Detailed Medal Table</a>
+        </div>
+
+        <!-- Venues Section -->
+        <div class="card" id="venues">
+            <h2>Venue Locations</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10874.56830849309!2d75.857276!3d30.901013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82d57b896a0f%3A0x6949a96e2f8e9c12!2sPunjab!5e0!3m2!1sen!2sin!4v1694516713243!5m2!1sen!2sin"
+                allowfullscreen></iframe>
+            <p>Explore the venues hosting the Summer Olympics in Punjab.</p>
+        </div>
+
+        <!-- Favorites Section -->
+        <div class="card" id="favorites">
+            <h2>Favorites</h2>
+            <p>Save your favorite events to follow closely.</p>
+            <a href="#" class="button">Add to Favorites</a>
+        </div>
+    </main>
+</body>
+
+</html>
